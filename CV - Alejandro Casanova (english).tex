@@ -1,0 +1,403 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+\setlength{\multicolsep}{2.0pt}% 50% of original values
+\input{structure.tex} % Include the file that specifies the document structure
+
+\newcommand{\MYhref}[3][brown]{\href{#2}{\color{#1}{#3} \footnotesize\faExternalLink}}%
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.15\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.055\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+
+	\begin{figure}[H]
+		% \fbox{
+		\includegraphics[width=0.51\textwidth]{pictures/foto_horizontal_3.jpg}
+		% }
+		\centering
+		%\raggedright
+	\end{figure}
+
+	{\sffamily\Huge Alejandro Casanova Martín}\\\medskip % Your name
+	%{\Huge\color{headings}\cvtextfont Curriculum Vitae}
+}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{Profile}
+I like learning new stuff. Currently studying and working as an embedded software engineer. I'm into new technologies, electronics, programming, and AI—plus a mix of other things like literature, philosophy, cinema, video games, and music. Always curious, always building.
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Job title
+%{} % Employer
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\workposition{SEP 2024 - Current} % Duration
+{} % FT/PT (full time or part time)
+{Embedded Software Engineer} % Job title
+{Akkodis} % Employer
+{Consultant at John Deere Ibérica S.A., specialized in developing embedded software applications for advanced drivetrain control in tractors and harvesters, primarily using C and Python.} % Description
+
+%------------------------------------------------
+
+\workposition{MAR 2023 - SEP 2023} % Duration
+{} % FT/PT (full time or part time)
+{Machine Learning \& Computer Vision Engineer} % Job title
+{Institute of Robotics and Industrial Computing (CSIC-UPC)} % Employer
+{Research internship at CSIC through the JAE Intro grant, focused on applying machine learning to computer vision tasks using Python, PyTorch, and MATLAB. My work was shared at \MYhref{https://2024.ieeeicip.org/}{ICIP2024} and published in \MYhref{https://doi.org/10.1109/ICIP51287.2024.10647967}{IEEE \textit{Xplore}\textsuperscript{\textcopyright}}.} % Description
+
+%------------------------------------------------
+
+\workposition{FEB 2022 - DEC  2022} % Duration
+{} % FT/PT (full time or part time)
+{Embedded Software Engineer} % Job title
+{Inordine Labs S.L.} % Employer
+{Worked with embedded systems using FreeRTOS and C/C++, mainly focused on IoT and Home Automation applications involving wireless communication, sensors, and real-time control. Gained experience in PCB design, assembly and troubleshooting as well.} % Description
+
+
+%------------------------------------------------
+
+% \workposition{SEP 2021 - JAN 2022} % Duration
+% {} % FT/PT (full time or part time)
+% {PCB Troubleshooting \& Repair} % Job title
+% {3 Bobinados y Montajes Eléctricos S.A.} % Employer
+% {Also acquired knowledge in soldering and PCB manufacturing.} % Description
+
+
+%------------------------------------------------
+
+%\workposition{SEP 2019 - JUN 2021} % Duration
+%{Part-Time} % FT/PT (full time or part time)
+%{Workshop Organizer - Volunteer} % Employer
+%{``La Tabacalera de Lavapiés'' Autonomous Social Center} % Job title
+%{I was an active member of the center's hacker-space, a non-profit workspace intended for collaboration and knowledge share in the fields of electronics, computer science and robotics. We imparted workshops on electronics repair and open-source software.} % Description
+
+%------------------------------------------------
+
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardize the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+%\textit{References available on request}
+
+%------------------------------------------------
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	%\tableentry{Junio 2015}{\textbf{International General Certificate}}{}
+	%\tableentry{}{\textbf{of Secondary Education}}{}
+	%\tableentry{}{Cambridge Examinations}{}
+	%\tableentry{}{\textit{Mayco School of English}}{spaceafter}
+	
+	%------------------------------------------------
+	
+	% \tableentry{}{}{} % Creates some additional whitespace between the references
+	
+	%------------------------------------------------
+
+	\tableentry{2023 - Current}{\textbf{MSc in Software Engineering}}{}
+	\tableentry{}{\textbf{for Distributed and Embedded Systems}}{}
+	\tableentry{}{Technical University of Madrid}{spaceafter}
+	
+	\tableentry{2017 - 2023}{\textbf{BSc in Industrial Electronics}}{}
+	\tableentry{}{\textbf{and Automation Engineering}}{}
+	\tableentry{}{Technical University of Madrid}{}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+\bigskip \medskip
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGE SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Language Skills} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{English}{\textit{Fluid (C2 Proficiency - Cambridge English Qualification)}}{}
+	\tableentry{Spanish}{\textit{Native}}{}
+
+	%------------------------------------------------
+	
+\end{supertabular}
+
+% \vspace{-50\baselineskip} % Standardize the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the colored box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			%\raisebox{-1pt}{\faMale} & Nationality: Spain  \\ % Address
+			\raisebox{-1pt}{\faPhone} & +34 634 587 492 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:alejandro.casanova@disroot.org}{alejandro.casanova@disroot.org} \\ % Email address
+			%\raisebox{-1pt}{\faSkype} & \href{https://join.skype.com/invite/kpM909HPkhCp}{My Skype Profile} \\ % Phone number
+			%\raisebox{-1pt}{\small\faDesktop} & \href{https://www.LaTeXTemplates.com}{https://www.LaTeXTemplates.com} \\ % Website
+			\raisebox{-1pt}{\faGithub} & \href{https://github.com/Alejandro-Casanova}{My GitHub page} \\ % GitHub profile
+			\raisebox{-1pt}{\faYoutube} & \href{https://www.youtube.com/channel/UCwhSx1mxXiyau-KV-9Cu7OA}{Video demos of my projects} \\ % YouTube
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/alejandro-casanova-mart\%C3\%ADn-b51a611ba}{My Linkedin profile} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+\bigskip
+
+%----------------------------------------------------------------------------------------
+%	Side Projects
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+% Example \longformdescription{} command to add another section:
+
+%\longformdescription{Heading}{Description}
+
+%------------------------------------------------
+
+\textbf{Real Time Drone Stabilization System.}
+{Implementation using various STM32 microcontrollers, CAN Bus, FreeRTOS and C. \MYhref{https://youtu.be/37sEJJjmmXA?si=eHC0WGdwVLPahtTi}{Video Demo}. \MYhref{https://github.com/Alejandro-Casanova/Sistema-de-Estabilizacion-de-un-Dron}{Code}.}
+\medskip \smallskip
+
+\textbf{Bachelor's Thesis.}
+{Designed and implemented a system for managing robot fleets, including a user interface for control and real-time monitoring. Project encompassed web development, UI/UX design, programming, and printed circuit board (PCB) design.\\ \MYhref{https://youtu.be/YyD5Z79hOv8}{App Demo}. \MYhref{https://youtu.be/mtEnJiwRX1E}{Robot Demo}. \MYhref{https://github.com/Alejandro-Casanova/Omniwheel-GUI}{Project Repository}.}
+\medskip \smallskip
+
+\textbf{Embedded Game Design with FPGA \& Microcontroller}
+{Designed and implemented an embedded game system, partitioning functionality between an FPGA (VHDL player interface) and a microcontroller (C game logic). Integrated the devices using UART serial communication. \MYhref{https://youtu.be/mrV308618dA}{\underline{Video demo.}} \MYhref{https://github.com/Alejandro-Casanova/Trabajo-SED}{\underline{Code}}}\\
+
+% \MYhref{https://github.com/Alejandro-Casanova/Trabajo-SED-FPGA}{\underline{Code (FPGA).}}
+
+\textbf{Swing-up \& Stabilization of an Inverted Pendulum.}\\
+{Using Arduino, MATLAB \& Simulink.\\ \MYhref{https://youtu.be/7lcDM7xUucg}{\underline{Video Demo}}.\MYhref{https://github.com/Alejandro-Casanova/Ingenieria-de-Control---Pendulo-Invertido}{\underline{Code \& Report}}.}\\
+
+%\textbf{2D video game, coded in C++.}
+%{\href{https://youtu.be/rveUtb6IloY}{\underline{Video demo.}} \href{https://github.com/Alejandro-Casanova/Videojuego-IIC}{\underline{Code.}}}\\
+
+\textbf{Pyhtonian Rhapsody (Shanghai Summer School 2021)}\\
+{Procedurally generated music, coded with Python. \\ Selected for exhibition at: \MYhref{https://eventex.es/arteficial1/}{EventEX ArteFicial}.\\ \MYhref{https://youtu.be/9s1SBtUt7fk}{\underline{Video demo}}. \MYhref{https://github.com/Alejandro-Casanova/MusicImproviser}{\underline{Code}}. \MYhref{https://drive.google.com/drive/folders/1Urcsu0m2U7pK8XEXXt3kuQElupgevaqG?usp=sharing}{\underline{Board \& Presentation}}.}\\
+
+%\textbf{Technology and Innovation in China -- Case Study on Cambricon Technologies.}
+%Short Essay on the technology and innovation ecosystem in China, and start-up company ``Cambricon Technologies". \href{https://drive.google.com/drive/folders/%1zif2v9qTX044IImVKgzzhhwVF_4x_Mka?usp=sharing}{\underline{Available here.}}\\
+
+%\textbf{Control \& Stabilization of the Speed of a Fan.}
+%{Using Arduino. \href{https://youtu.be/wGxLK6ayyK8}{\underline{Video Demo}}.\href{https://github.com/Alejandro-Casanova/Proyecto-Arduino-Regulacion-%Automatica}{\underline{Code \& Report}}.}
+
+%\bigskip \bigskip
+
+
+%----------------------------------------------------------------------------------------
+%	COURSES AND SEMINARS
+%----------------------------------------------------------------------------------------
+%\medskip \medskip \medskip \medskip \medskip \medskip \medskip \medskip \medskip \medskip
+%\bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip \bigskip
+
+\section{Courses and Seminars}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	%\tableentry{}{\textbf{Polythecnic University of Madrid -- Robotics }}{}
+	%\tableentry{}{\textbf{and Electronics Club (CREA)}}{}
+	%\tableentry{2019}{\textit{Introduction to PCB Design}}{}
+	%\tableentry{2019}{\textit{Introduction to 3D modeling and printing}}{}
+	%\tableentry{2020}{\textit{Introduction to videogame design}}{spaceafter}
+	%------------------------------------------------
+	
+	\tableentry{}{\textbf{Tokyo Institute of Technology}}{}
+	\tableentry{2024}{\textit{SERP2024 - Research Stay}}{}
+	\tableentry{}{\textit{Machine Learning \& Edge Computing.}}{spaceafter}
+
+	\tableentry{}{\textbf{Polytechnic University of Bucharest}}{}
+	\tableentry{2022}{\textit{Embedded Systems course}}{spaceafter}
+
+	\tableentry{}{\textbf{Tongji University of China}}{}
+	\tableentry{2021}{\textit{Shanghai Summer School, hosted by the}}{}
+	\tableentry{}{\textit{College of Design and Innovation.}}{spaceafter}
+
+%	\tableentry{}{\textbf{Polytechnic University of Madrid}}{}
+%	\tableentry{2021}{\textit{The future seen from MIT:}}{}
+%	\tableentry{}{\textit{Microelectronics, Semiconductors and Innovation.}}{}
+%	\tableentry{2020}{\textit{Technology and Innovation in China:}}{}
+%	\tableentry{}{\textit{The Insiders' Perspective}}{}
+	
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+\medskip
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{}{\textbf{Programming}}{}
+	\tableentry{}{C, C++, Python, JavaScript, MATLAB \& Simulink }{spaceafter}
+	
+	\tableentry{}{\textbf{Embedded Systems Development}}{}
+	\tableentry{}{Microcontrollers: Infineon, Silicon Labs,}{}
+	\tableentry{}{STM32 (ARM Cortex-M), ESP32}{spaceafter}
+
+%	\tableentry{Basic}{SDL2, OpenGL, GLUT}{}
+%	\tableentry{}{STEP7 \& TIA Portal}{spaceafter}
+
+	%------------------------------------------------
+	
+	\tableentry{}{\textbf{Operating Systems \& Services}}{}
+	\tableentry{}{Windows, GNU/Linux, POSIX, FreeRTOS}{spaceafter}
+
+	%------------------------------------------------
+	
+%	\tableentry{}{\textbf{PCB Design}}{}
+%	\tableentry{}{KiCAD, EAGLE, Altium}{spaceafter}
+	
+	%------------------------------------------------
+	
+%	\tableentry{}{\textbf{Circuit Design \& Simulation}}{}
+%	\tableentry{}{OrCAD Capture \& PSpice}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{}{\textbf{Others}}{}
+	\tableentry{}{Agile, Git, GitHub}{}
+%	\tableentry{Basic}{Unity}{spaceafter}
+	%
+	%------------------------------------------------
+	%
+\end{supertabular}
+%
+%----------------------------------------------------------------------------------------
+%
+\end{paracol}
+%
+%----------------------------------------------------------------------------------------
+%
+\end{document}
